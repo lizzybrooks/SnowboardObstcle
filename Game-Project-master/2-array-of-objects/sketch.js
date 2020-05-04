@@ -22,32 +22,37 @@ function setup() {
 
 
 function draw() {
-  background(0,240,230);
+  background(0,230,230);
   for (var i = 1; i < bubbles.length; i++) {
     bubbles[i].move();
     bubbles[i].display();
 
+    fill(255,255,51)
+    ellipse(750,50,60,60)
+
+
+
   }
+
 
 }
 
 function Bubble(){
-  this.x = random(0, width);
-  this.y = random(0, height);
+  this.x = random(1, width);
+  this.y = random(1, height);
 
   this.display = function() {
-   stroke(255);
-    strokeWeight(1);
-    fill(255);
-    ellipse(this.x, this.y, 27, 27);
+
+    stroke(255);
+     strokeWeight(1);
+     fill(255)
+    ellipse(this.x, this.y, 24, 27);
     ellipse(this.x+10,this.y+10,24,24);
     ellipse(this.x+30,this.y+10,24,24);
     ellipse(this.x+30,this.y-10,24,24);
     ellipse(this.x+20,this.y-10,24,24);
     ellipse(this.x+40,this.y,24,24);
 
-    ellipse(750,50,60,60)
-       fill(260,210,0)
 
 
 
@@ -58,14 +63,13 @@ function Bubble(){
     this.y = this.y + random(-1, 1);
 
     if(this.x >= width){
-    this.x = 0;
+    this.x = 1;
+
 
 
     }
   }
 }
-
-
 
 
 

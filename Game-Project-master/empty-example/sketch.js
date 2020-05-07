@@ -1,12 +1,10 @@
-function setup() {
-  createCanvas(700, 600);
-}
+let noiseScale=0.02;
 
-function draw(){
-	background(220,100,3);
-  fill("black")
-  ellipse(100,100,40,50);
-  fill("blue")
-  rect(200,200,100,150)
-
+function draw() {
+background(0,200,230);
+  for (let x=0; x < width; x++) {
+    let noiseVal = noise((mouseX+x)*noiseScale, mouseY*noiseScale);
+    stroke(235);
+    line(x, mouseY+noiseVal*80, x, height);
+  }
 }

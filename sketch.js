@@ -48,7 +48,7 @@ function draw() {
     if (snowscape.length>width){
       snowscape.shift();
     }
-    if (frameCount<50){
+    if (frameCount<150){
   textAlign(CENTER)
   noStroke();
   text("Welcome to this game! Move the snowboarder to jump over the snow. Your game will begin in a few seconds", width/2,height/2)

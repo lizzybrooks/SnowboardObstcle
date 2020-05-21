@@ -11,7 +11,7 @@ function preload() {
 //
 //   //create an animation from a sequence of numbered images
 //   //pass the first and the last file name and it will try to find the ones in between
-  snowboarder = loadAnimation('sprites/Snowboarder1.png', 'sprites/Snowboarder24.png');
+  snowboarder = loadAnimation('Sprites/Snowboarder1.png', 'Sprites/Snowboarder24.png');
 
 }
 
